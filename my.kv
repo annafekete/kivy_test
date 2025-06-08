@@ -1,0 +1,16 @@
+<MyBox>:
+
+    myInput : inputID
+
+    BoxLayout:
+        size: root.width, root.height
+        orientation : "vertical"
+        
+        Label:
+            text: "Adja meg a vonalkódot:"
+        TextInput:
+            id: inputID
+
+        Button:
+            text: "Kész"
+            on_press: root.printOut()
